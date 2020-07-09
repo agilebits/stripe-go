@@ -100,6 +100,7 @@ type InvoiceParams struct {
 	Description          *string                     `form:"description"`
 	DueDate              *int64                      `form:"due_date"`
 	Footer               *string                     `form:"footer"`
+	Metadata             map[string]string           `json:"metadata"`
 	Paid                 *bool                       `form:"paid"`
 	StatementDescriptor  *string                     `form:"statement_descriptor"`
 	Subscription         *string                     `form:"subscription"`
